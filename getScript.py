@@ -36,6 +36,8 @@ addEventListener(
 
 # Worker script
 def worker_script(doprax):
+    if "https://" in doprax:
+        doprax = doprax.split("/")[2]
     temp = re.sub("target", doprax, script)
     return temp
 
