@@ -18,11 +18,6 @@ git clone https://github.com/Kourva/V2rayDoprax && cd V2rayDoprax
 pip install requests beautifulsoup4
 ```
 
-# Tutorial (Persian) by Isegaro
-Big thanks to Isegaro for his tutorial and works.
-Learn how to create Doprax & CloidFlare account and config it from [here](https://telegra.ph/Free-Hetzner-V2ray-with-iSegaro-01-30).
-
-
 # Usage
 + **config.conf**
 ```config
@@ -72,11 +67,49 @@ Help: python getScript.py [arguments]
     example: 
         python getScript.py test.eu-gacagfhs.dopraxrocks.net
 ```
++ **getUUID.py**
+```bash
+Help: python getUUID.py [[-h] [-v1] [-v4]]
+    -h  : Show this message and exit.
+    -v1 : get version 1 UUID
+    -v4 : get version 4 UUID
 
+* What is a Version 1 UUID?
+    A Version 1 UUID is a universally unique identifier that 
+    is generated using a timestamp and the MAC address of 
+    the computer on which it was generated.
 
+* What is a version 4 UUID?
+    A Version 4 UUID is a universally unique identifier that 
+    is generated using random numbers.using a secure random 
+    number generator.
+```
++ **getVless.py**
+```bash
+Help: python getVless.py [arguments]
 
+    create proxy -> python getVless.py config.conf
+    help message -> python getVless.py -h/--help
+```
++ **randomVless.py**
+```bash
+Help: python randomVless.py [config] [How many proxy]
 
+    create proxy -> python randomVless.py config.conf 10
+    help message -> python randomVless.py -h/--help 
+```
 
+# Needed tools
+###### 1:  You need to fork this [repository](https://github.com/Kourva/V2ray-for-Doprax)
+###### 2:  An E-mail Address for creating account
+###### 3:  Account in [Doprax](https://www.doprax.com/)
+###### 4:  Account in [CloudFlare](https://cloudflare.com)
 
+##### Tutorial (Persian)
+Big thanks to Isegaro for his tutorial and works.
+Learn how to create Doprax & CloidFlare account and config it from [here](https://telegra.ph/Free-Hetzner-V2ray-with-iSegaro-01-30).
 
-
+##### FreeNode
+Websites to get UUID:
++ [getafreenode](https://getafreenode.com)
++ [awesome tools](https://www.v2fly.org/en_US/awesome/tools.html)
