@@ -113,3 +113,13 @@ Learn how to create Doprax & CloidFlare account and config it from [here](https:
 Websites to get UUID:
 + [getafreenode](https://getafreenode.com)
 + [awesome tools](https://www.v2fly.org/en_US/awesome/tools.html)
+
+# Screenshots
+###### You can download V2rayN app from their official [Github](github.com/2dust/v2rayN) account.
+![V2rayN](https://user-images.githubusercontent.com/118578799/218227327-dcdbb6ab-2a76-44b7-9400-55b9f65f86f1.png)
+###### You can create so many proxies each day. tested download speed is about 0.5 Mb/s
+![terminal](https://user-images.githubusercontent.com/118578799/218227440-012640e1-50fd-4b6d-a2a2-19d3ec15a7ba.png)
+
+<br><br>
+# Hope you enjoy :D
+> Don't forget the star
