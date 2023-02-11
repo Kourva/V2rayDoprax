@@ -42,11 +42,36 @@ vless                                         <- This is default but you can cha
 test                                                              <- Alias for proxies
 --------------------------------------------------------------------------------------
 ```
++ **check_worker.py**
+```bash
+Help: python check_worker [url]
 
+Where url looks like:
+    https://example.workers.dev
+```
++ **getAllIPs.py**
+```bash
+Help: python getAllIPs.py [arguments]
 
+    for save the IPs -> python getAllIPs.py -s
+    for help message -> python getAllIPs.py [-h, --help]
+```
++ **getIP.py**
+```bash
+Help: python getIP.py [arguments]
 
+    for only get IPs -> python getIP.py
+    for save the IPs -> python getIP.py -s
+    for help message -> python getIp.py [-h, --help] 
+ ```
+ + **getScript.py**
+```bash
+Help: python getScript.py [arguments]
 
-
+    create Script -> python getScript.py [Doprax url without 'https://' and '/' at the end]
+    example: 
+        python getScript.py test.eu-gacagfhs.dopraxrocks.net
+```
 
 
 
