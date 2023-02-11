@@ -21,3 +21,37 @@ pip install requests beautifulsoup4
 # Tutorial (Persian) by Isegaro
 Big thanks to Isegaro for his tutorial and works.
 Learn how to create Doprax & CloidFlare account and config it from [here](https://telegra.ph/Free-Hetzner-V2ray-with-iSegaro-01-30).
+
+
+# Usage
++ **config.conf**
+```config
+[Worker]
+https://test.example.workers.dev/                      <- Your CloudFlare address here
+--------------------------------------------------------------------------------------
+[Doprax]
+example.eu-sadgfhs.dopraxrocks.net                     <- Your Doprax app Adreess here
+--------------------------------------------------------------------------------------
+[UUID]
+F4C....                                                              <- Your UUID here
+--------------------------------------------------------------------------------------
+[path]
+vless                                         <- This is default but you can change it
+--------------------------------------------------------------------------------------
+[Alias]
+test                                                              <- Alias for proxies
+--------------------------------------------------------------------------------------
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
