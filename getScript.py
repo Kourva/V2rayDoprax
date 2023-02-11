@@ -46,10 +46,11 @@ if __name__ == "__main__":
         if sys.argv[1] in ["-h", "--help"]:
             print(
                 """
-Help: python getAllVless.py [arguments]
+Help: python getScript.py [arguments]
 
-    create Script -> python getScript [Doprax url without 'https://' and '/' at the end]
-    example: test.eu-gacagfhs.dopraxrocks.net
+    create Script -> python getScript.py [Doprax url without 'https://' and '/' at the end]
+    example: 
+        python getScript.py test.eu-gacagfhs.dopraxrocks.net
 """
             )
         elif sys.argv[1]:
