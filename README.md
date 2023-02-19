@@ -137,7 +137,7 @@ Help: python randomVmess.py [config] [How many proxy]
 ###### 5:  Then you can work with this tool to create proxies 
 
 # Tutorial (Persian)
-Thanks to [Isegaro](https://twitter.com/iSegaro) for his greate tutorial and works.
+Thanks to [Isegaro](https://twitter.com/iSegaro) for his greate tutorial and works.<br>
 Learn how to create Doprax & CloidFlare account and config it from [here](https://telegra.ph/Free-Hetzner-V2ray-with-iSegaro-01-30).
 
 # FreeNode
