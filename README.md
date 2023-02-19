@@ -153,7 +153,7 @@ Websites to get UUID:
 </p>
 <br>
 
-###### There is an android app to create vmess/vless proxy. you can check it out :] 
+###### There is an android app to create vmess/vless proxy. check it out :] 
 ###### V2Paste: https://github.com/Kourva/V2Paste
 ###### So I'm trying to work on both linux and android versions. Hope you enjoy
 
