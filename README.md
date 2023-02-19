@@ -155,8 +155,8 @@ Websites to get UUID:
 
 ###### There is an android app to create vmess/vless proxy. you can check it out :] 
 ###### V2Paste: https://github.com/Kourva/V2Paste
-###### So I'm trying to work on both linux and android verions. Hope you enjoy
+###### So I'm trying to work on both linux and android versions. Hope you enjoy
 
-<br><br>
-# Hope you enjoy :D
-> Don't forget the star
+<br>
+# Thanks
+###### You can give me a star if you find this tool helpfull. Wishing you all the best.
