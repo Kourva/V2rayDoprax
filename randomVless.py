@@ -45,7 +45,7 @@ def vless_generator():
         doprax = lines.split("\n")[4]
         uuid = lines.split("\n")[7]
         path = lines.split("\n")[10]
-        alias = lines.split("\n")[13]
+        alias = lines.split("\n")[16]
 
     vless_url = "vless://{uuid}@{addrs}:443?encryption=none&security=tls&sni={worker_host}&alpn=http%2F1.1&type=ws&host={worker_host}&path={path}#{alias}"
     names, addrs = [], []
