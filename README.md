@@ -1,15 +1,25 @@
-# V2rayDoprax
-V2ray Vless tool to create thousands of vless proxies at ones! and more tools... for Doprax
+<p>
+    <img align="left" src="https://i0.wp.com/img.aapks.com/imgs/c/9/5/c95d7d8f2388afd94a20fd5004105246_icon.png?w=140">
+    <h1> V2rayDoprax v2 </h1>
+    <p> V2ray is a tool to create thousands of Vless/Vmess proxies at ones! includes more tools... for Doprax </p>
+</p>
+<br>
 
-<img align="right" src="https://i0.wp.com/img.aapks.com/imgs/c/9/5/c95d7d8f2388afd94a20fd5004105246_icon.png?w=180">
-
+# Features
 + About 27000 proxies
 + Vless proxy
++ Vmess proxy
 + UUID version 1 
 + UUID version 4
 + Worker Script
 + Worker check
++ Get vmess Config
 
+# What's new in version 2?
++ Supports vmess proxy
++ Create vmess for Iran **(getVmess.py)**
++ Create random vmess **(randomVmess.py)**
++ Extract vmess config **(getConfig.py)**
 
 # Installation
 + clone
@@ -33,8 +43,11 @@ example.eu-sadgfhs.dopraxrocks.net                     <- Your Doprax app Adrees
 [UUID]
 F4C....                                                              <- Your UUID here
 --------------------------------------------------------------------------------------
-[path]
+[Path vless]
 vless                                         <- This is default but you can change it
+--------------------------------------------------------------------------------------
+[Path Vmess]
+vmess                                         <- This is default but you can change it
 --------------------------------------------------------------------------------------
 [Alias]
 test                                                              <- Alias for proxies
@@ -101,27 +114,47 @@ Help: python randomVless.py [config] [How many proxy]
     create proxy -> python randomVless.py config.conf 10
     help message -> python randomVless.py -h/--help 
 ```
++ **getVmess.py**
+```bash
+Help: python getVmess.py [config]
+
+    create proxy -> python getVmess.py config.conf
+    help message -> python getVmess.py -h/--help 
+```
++ **randomVmess.py**
+```bash
+Help: python randomVmess.py [config] [How many proxy]
+
+    create proxy -> python randomVmess.py config.conf 10
+    help message -> python randomVmess.py -h/--help 
+```
 
 # Needed tools
 ###### 1:  You need to fork this [repository](https://github.com/Kourva/V2ray-for-Doprax)
 ###### 2:  An E-mail Address for creating account
 ###### 3:  Account in [Doprax](https://www.doprax.com/)
 ###### 4:  Account in [CloudFlare](https://cloudflare.com)
+###### 5:  Then you can work with this tool to create proxies 
 
-##### Tutorial (Persian)
-Big thanks to Isegaro for his tutorial and works.
+# Tutorial (Persian)
+Thanks to [Isegaro](https://twitter.com/iSegaro) for his greate tutorial and works.
 Learn how to create Doprax & CloidFlare account and config it from [here](https://telegra.ph/Free-Hetzner-V2ray-with-iSegaro-01-30).
 
-##### FreeNode
+# FreeNode
 Websites to get UUID:
 + [getafreenode](https://getafreenode.com)
 + [awesome tools](https://www.v2fly.org/en_US/awesome/tools.html)
+<br>
 
-# Screenshots
-###### You can download V2rayN app from their official [Github](github.com/2dust/v2rayN) account.
-![V2rayN](https://user-images.githubusercontent.com/118578799/218227327-dcdbb6ab-2a76-44b7-9400-55b9f65f86f1.png)
-###### You can create so many proxies each day. tested download speed is about 0.5 Mb/s
-![terminal](https://user-images.githubusercontent.com/118578799/218227440-012640e1-50fd-4b6d-a2a2-19d3ec15a7ba.png)
+<p>
+    <img align="left" src="https://user-images.githubusercontent.com/118578799/219364816-7bb81cac-2cb5-4e52-bbc7-9bf907d016b1.png" width=140 height=140 />
+    <h1> V2Paste </h1>
+    <p><b> Create Vless/Vmess proxies via given config with this simple app in Android </b></p>
+</p>
+<br>
+###### There is an android app to create vmess/vless proxy. you can check it out :]
+###### V2Paste: https://github.com/Kourva/V2Paste
+###### So I'm trying to work on both linux and android verions. Hope you enjoy
 
 <br><br>
 # Hope you enjoy :D
