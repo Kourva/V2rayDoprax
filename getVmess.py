@@ -72,7 +72,7 @@ def vmess_generator():
     for name, addrs in get_servers():
         vmess_config = {
             "v": "2",
-            "ps": alias,
+            "ps": alias + "-" + name,
             "add": addrs,
             "port": "443",
             "id": uuid,
