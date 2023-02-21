@@ -7,19 +7,21 @@
 
 # Features
 + About 27000 proxies
-+ Vless proxy
-+ Vmess proxy
-+ UUID version 1 
-+ UUID version 4
-+ Worker Script
-+ Worker check
-+ Get vmess Config
++ Vless proxy generator
++ Vmess proxy generator
++ UUID version 1 generator
++ UUID version 4 generator
++ Worker Script generator
++ Worker checker
++ Vmess URL decoder
++ Proxy cloner **(new)**
 
 # What's new in version 2?
 + Supports vmess proxy
 + Create vmess for Iran **(getVmess.py)**
 + Create random vmess **(randomVmess.py)**
 + Extract vmess config **(getConfig.py)**
++ Proxy cloner **(new)**
 
 # Installation
 + clone
@@ -145,6 +147,19 @@ Help: python randomVmess.py [config] [How many proxy]
     create proxy -> python randomVmess.py config.conf 10
     help message -> python randomVmess.py -h/--help 
 ```
++ **cloner.py**
+```bash
+Help: python clones.py [[-h] [-vl url] [-vm url]]
+    -h/--help: Show this message and exit.
+    -vl url  : Clone vless proxy
+    -vm url  : Clone vmess proxy
+    
+    vless cloner: python cloner.py -vl vless://....
+    vmess cloner: python cloner.py -vm vmess://....
+
+note: put URL inside "" (string)
+```
+
 # Note
 #### Difference between getUUID and genUUID ?
 ###### getUUID uses API, so it needs internet connection
