@@ -146,7 +146,7 @@ Help: python randomVmess.py [config] [How many proxy]
     help message -> python randomVmess.py -h/--help 
 ```
 # Note
-#### Difference between getUUID and genUUID is:
+#### Difference between getUUID and genUUID ?
 ###### getUUID uses API, so it needs internet connection
 ###### genUUID uses built-in module, so it's fast and offline
 
