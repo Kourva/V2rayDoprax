@@ -100,6 +100,23 @@ Help: python getUUID.py [[-h] [-v1] [-v4]]
     is generated using random numbers.using a secure random 
     number generator.
 ```
++ **genUUID.py**
+```bash
+Help: python genUUID.py [[-h] [-v1] [-v4]]
+    -h  : Show this message and exit.
+    -v1 : Generate version 1 UUID
+    -v4 : Generate version 4 UUID
+
+* What is a Version 1 UUID?
+    A Version 1 UUID is a universally unique identifier that 
+    is generated using a timestamp and the MAC address of 
+    the computer on which it was generated.
+
+* What is a version 4 UUID?
+    A Version 4 UUID is a universally unique identifier that 
+    is generated using random numbers.using a secure random 
+    number generator.
+```
 + **getVless.py**
 ```bash
 Help: python getVless.py [arguments]
@@ -128,6 +145,10 @@ Help: python randomVmess.py [config] [How many proxy]
     create proxy -> python randomVmess.py config.conf 10
     help message -> python randomVmess.py -h/--help 
 ```
+# Note
+#### Difference between getUUID and genUUID is:
+###### getUUID uses API, so it needs internet connection
+###### genUUID uses built-in module, so it's fast and offline
 
 # Needed tools
 ###### 1:  You need to fork this [repository](https://github.com/Kourva/V2ray-for-Doprax)
