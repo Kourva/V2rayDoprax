@@ -35,7 +35,7 @@ arguments = sys.argv
 
 # Help message
 help_message = """
-Help: python getUUID.py [[-h] [-v1] [-v4]]
+Help: python genUUID.py [[-h] [-v1] [-v4]]
     -h  : Show this message and exit.
     -v1 : Generate version 1 UUID
     -v4 : Generate version 4 UUID
