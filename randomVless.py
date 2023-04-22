@@ -5,11 +5,7 @@
 
 
 # Imports
-import requests
-import string
-import random
-import time
-import sys
+import requests, string, random, time, sys
 
 
 # Random server name generator
@@ -23,10 +19,9 @@ def get_servers():
     names = []
     addrs = []
 
-    # Servers from sudoer.net
-    respones = requests.get("http://bot.sudoer.net/result.cf")
-    if respones.status_code == 200:
-        targets = respones.text.strip().split("\n")
+    # Servers from database
+    with open("ip/all_result.txt") as data:
+        targets = [url.split("\n")[0] for url in data.readlines()]
         for i in range(int(sys.argv[2])):
             addrs.append(targets[random.randint(0, len(targets) - 1)])
             names.append(random_name())
