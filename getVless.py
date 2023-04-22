@@ -5,9 +5,7 @@
 
 
 # Imports
-import requests
-import time
-import sys
+import requests, time, sys
 
 
 # Gets servers
