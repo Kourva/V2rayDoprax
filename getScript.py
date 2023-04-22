@@ -1,13 +1,11 @@
 #!/usr/bin/env python3
 
 
-# Get CloudFlare worker script by your Doprax url
+# This Script gets CloudFlare worker script from your Doprax url
 
 
 # Imports
-import time
-import sys
-import re
+import time, sys, re
 
 
 # Script
