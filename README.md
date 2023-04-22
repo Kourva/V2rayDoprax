@@ -1,13 +1,13 @@
-<h1 align="center"> IT SEEMS SOME WEBSITES WE USE IN THIS PROJECT ARE NO LONGER AVAILABLE! WAIT FOR UPDATE. </h1>
-
-<br><br><br>
-
 <p>
     <img align="left" src="https://i0.wp.com/img.aapks.com/imgs/c/9/5/c95d7d8f2388afd94a20fd5004105246_icon.png?w=140">
     <h1> V2rayDoprax v2 </h1>
     <p> V2ray is a tool to create thousands of Vless/Vmess proxies at ones! includes more tools... for Doprax </p>
 </p>
 <br>
+
+# Note:
++ ~~IT SEEMS SOME WEBSITES WE USE IN THIS PROJECT ARE NO LONGER AVAILABLE! WAIT FOR UPDATE~~
++ SCRIPTS ARE UPDATED AND WORK FINE
 
 # Features
 + About 27000 proxies
