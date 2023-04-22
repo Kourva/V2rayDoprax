@@ -1,11 +1,9 @@
 #!/usr/bin/env python3
 
-# Generate UUID version 1 or version 4
+# This Script Generates UUID version 1 or version 4
 
 # Imports
-import uuid
-import sys
-import time
+import uuid, sys, time
 
 
 # Printer
@@ -20,13 +18,13 @@ def printer(string):
 # UUID version 1 generator
 def generate_uuid_1():
     generated_uuid = uuid.uuid1()
-    return f"Version1 UUID: \033[2;32m{str(generated_uuid)}\033[m\n"
+    return f"Version1 UUID: \033[2;32m{str(generated_uuid).upper()}\033[m\n"
 
 
 # UUID version 4 generator
 def generate_uuid_4():
     generated_uuid = uuid.uuid4()
-    return f"Version4 UUID: \033[2;32m{str(generated_uuid)}\033[m\n"
+    return f"Version4 UUID: \033[2;32m{str(generated_uuid).upper()}\033[m\n"
 
 
 # Takes arguments
