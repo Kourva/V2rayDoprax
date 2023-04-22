@@ -5,10 +5,7 @@
 
 
 # Imports
-import requests 
-import base64
-import time
-import sys
+import requests, base64, time, sys
 
 
 # Gets servers
@@ -16,41 +13,31 @@ def get_servers():
     names = []
     addrs = []
 
-    # Servers from sudoer.net
-    respones = requests.get("http://bot.sudoer.net/best.cf.iran")
-    if respones.status_code == 200:
-        for server in respones.text.split("\n"):
-            try:
-                names.append(server.split()[0])
-                addrs.append(server.split()[1])
-            except:
-                continue
+    # Servers from Isegaro : Thank you so much for your help <3
+    # Follow him on Twitter: https://twitter.com/iSegaro
+    for addrss, name in [
+        ("isegaro.ddns.net", "Isegaro1"),
+        ("ip.isegaro.click", "Isegaro2"),
+    ]:
+        addrs.append(addrss)
+        names.append(name)
 
-        # Servers from Isegaro : Thank you so much for your help <3
-        # Follow him on Twitter: https://twitter.com/iSegaro
-        for addrss, name in [
-            ("isegaro.ddns.net", "Isegaro1"),
-            ("ip.isegaro.click", "Isegaro2"),
-        ]:
-            addrs.append(addrss)
-            names.append(name)
+    # Other servers (You need more? run randomVmess.py)
+    servers_list = [
+        ("Atlanta.v2ray.online", "Altania"),
+        ("Seattle.v2ray.online", "Seattle"),
+        ("Helsinki.v2ray.online", "Helsinki"),
+        ("Phoenix.v2ray.online", "Phoenix"),
+        ("Vienna.v2ray.online", "Vienna"),
+        ("Amsterdam.v2ray.online", "Amesterdam"),
+        ("LosAngeles.v2ray.online", "LosAngeles"),
+        ("Tokyo.v2ray.online", "Tokyo"),
+    ]
+    for addrss, name in servers_list:
+        addrs.append(addrss)
+        names.append(name)
 
-        # Other servers (You need more? run randomVmess.py)
-        servers_list = [
-            ("Atlanta.v2ray.online", "Altania"),
-            ("Seattle.v2ray.online", "Seattle"),
-            ("Helsinki.v2ray.online", "Helsinki"),
-            ("Phoenix.v2ray.online", "Phoenix"),
-            ("Vienna.v2ray.online", "Vienna"),
-            ("Amsterdam.v2ray.online", "Amesterdam"),
-            ("LosAngeles.v2ray.online", "LosAngeles"),
-            ("Tokyo.v2ray.online", "Tokyo"),
-        ]
-        for addrss, name in servers_list:
-            addrs.append(addrss)
-            names.append(name)
-
-        return zip(names, addrs)
+    return zip(names, addrs)
     raise SystemExit("Can't get servers!")
 
 
@@ -109,7 +96,6 @@ if __name__ == "__main__":
             print(
                 """
 Help: python getVmess.py [arguments]
-
     create proxy -> python getVmess.py config.conf
     help message -> python getVmess.py -h/--help 
 """
