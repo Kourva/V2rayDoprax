@@ -4,11 +4,7 @@
 # Works with both vless & vmess proxies
 
 # Imports
-import random
-import base64
-import time
-import json
-import sys
+import random, base64, time, json, sys
 
 
 # Vless cloner
@@ -37,17 +33,15 @@ def clone_vless(url):
 
 # Vmess cloner
 def clone_vmess(url):
-    target = url.split("vmess://")[1].strip()
-
-    original_message = target.encode("ascii")
-    base64_message = base64.b64decode(original_message)
-    decoded_message = base64_message.decode("ascii")
-    config_message = json.loads(decoded_message.replace("'", '"'))
+    encoded_data = url.split("vmess://")[1].strip()
+    output = json.loads(
+        base64.b64decode(encoded_data).decode("utf-8").replace("'", '"')
+    )
 
     ipaddr, port, remark = (
-        config_message["add"],
-        config_message["port"],
-        config_message["ps"],
+        output["port"],
+        output["add"],
+        output["ps"],
     )
 
     with open("ip/all_result.txt", "r") as file:
@@ -56,7 +50,7 @@ def clone_vmess(url):
 
     clones = []
     for index, server in enumerate(iplist, start=1):
-        temp = config_message
+        temp = output
         temp["add"] = server
         temp["port"] = "443"
         temp["ps"] = remark + "-" + str(index)
