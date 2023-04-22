@@ -1,20 +1,15 @@
 #!/usr/bin/env python3
 
 
-# Get vmess config from vmess url
+# This script gets vmess config from vmess url
 
 
 # Imports
-import base64
-import time
-import json
-import sys
+import base64, time, json, sys
 
 
 def printer(message: str) -> None:
-    message = message.replace("'", '"')
-    parsed_json = json.loads(message)
-    pretty_json = json.dumps(parsed_json, indent=4)
+    pretty_json = json.dumps(message, indent=4)
     for char in pretty_json:
         sys.stdout.write(char)
         sys.stdout.flush()
@@ -24,13 +19,11 @@ def printer(message: str) -> None:
 
 
 def get_config(vmess_url):
-    target = vmess_url.split("vmess://")[1].strip()
-
-    tempvar = target.encode("ascii")
-    message = base64.b64decode(tempvar)
-    configs = message.decode("ascii")
-
-    return configs
+    encoded_data = vmess_url.split("vmess://")[1].strip()
+    output = json.loads(
+        base64.b64decode(encoded_data).decode("utf-8").replace("'", '"')
+    )
+    return output
 
 
 # Run the program
