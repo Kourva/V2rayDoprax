@@ -6,10 +6,7 @@
 
 
 # Imports
-import requests
-import time
-import sys
-import bs4
+import requests, time, sys, bs4
 
 
 # Gets version 1 UUID
