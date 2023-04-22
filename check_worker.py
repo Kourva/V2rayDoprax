@@ -1,18 +1,15 @@
 #!/usr/bin/env python3
 
-
-# Checks your Worker service
-
+# This Script checks your Worker service
 
 # Imports
-import requests
-import sys
-import bs4
+import requests, sys, bs4
 
 
 # Check the worker
 def check_worker(worker: str) -> None:
     try:
+        print("\033[2;32mChecking...\033[m")
         response = requests.get(worker, timeout=10)
         if response.status_code == 200:
             soup = bs4.BeautifulSoup(response.text, "html.parser")
