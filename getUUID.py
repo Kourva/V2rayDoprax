@@ -1,33 +1,26 @@
 #!/usr/bin/env python3
-
+# -*- coding: utf-8 -*-
 
 # Get both version1 or version4 UUID from https://www.uuidgenerator.net
 # GitHub: https://github.com/Kourva/getUUID
 
-
 # Imports
 import requests, time, sys, bs4
-
 
 # Gets version 1 UUID
 def get_version1():
     response = requests.get("https://www.uuidgenerator.net/version1")
     soup = bs4.BeautifulSoup(response.text, "html.parser")
-    temp = soup.find(id="generated-uuid").text
-    return temp.upper()
-
+    return soup.find(id="generated-uuid").text.upper()
 
 # Gets version 4 UUID
 def get_version4():
     response = requests.get("https://www.uuidgenerator.net/version4")
     soup = bs4.BeautifulSoup(response.text, "html.parser")
-    temp = soup.find(id="generated-uuid").text
-    return temp.upper()
-
+    return soup.find(id="generated-uuid").text.upper()
 
 # Takes arguments
 arguments = sys.argv
-
 
 # Help message
 help_message = """
@@ -48,7 +41,7 @@ Help: python getUUID.py [[-h] [-v1] [-v4]]
 """
 
 
-# Run the program
+# Main
 if __name__ == "__main__":
     if "-h" in arguments:
         print(help_message)
@@ -68,5 +61,3 @@ if __name__ == "__main__":
 
     if len(sys.argv) == 1:
         print("\033[2;31mError: no argument found! Use -h\033[m")
-
-# EOF
