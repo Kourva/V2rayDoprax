@@ -22,6 +22,7 @@
 + Proxy cloner **(new)**
 
 # What's new in version 2?
++ Get free V2ray proxies **(freeV2ray.py)**
 + Supports vmess proxy
 + Create vmess for Iran **(getVmess.py)**
 + Create random vmess **(randomVmess.py)**
@@ -169,6 +170,12 @@ Help: python clones.py [[-h] [-vl url] [-vm url]]
     vmess cloner: python cloner.py -vm vmess://....
 
 note: put URL inside "" (string)
+```
++ **freeV2ray.py**
+```bash
+Help: python freeV2ray.py [arguments]
+    get free proxies -> python freeV2ray.py 20 (maximum length is 20)
+    help message     -> python freeV2ray.py -h/--help 
 ```
 
 # Note
