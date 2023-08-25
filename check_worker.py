@@ -16,9 +16,9 @@ def check_worker(worker: str) -> None:
         if response.status_code == 200:
             soup = bs4.BeautifulSoup(response.text, "html.parser")
             print(
-                f"\033[2;32m"
-                f"soup.find("p").text.replace('page', 'message')"
-                f"\nStatus code:     {response.status_code}\033[m"
+                f"\033[2;32m",
+                f"soup.find("p").text.replace('page', 'message')",
+                f"\nStatus code:     {response.status_code}\033[m",
             )
 
     # Handle exceptions
