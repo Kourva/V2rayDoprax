@@ -43,7 +43,7 @@ chmod +x *.py
 ```
 
 # Usage
-+ **config.conf**
++ **config.conf** (please do not change the lines!)
 ```config
 [Worker]
 https://test.example.workers.dev/                      <- Your CloudFlare address here
