@@ -1,14 +1,12 @@
 #!/usr/bin/env python3
-
+# -*- coding: utf-8 -*-
 
 # This Script gets CloudFlare worker script from your Doprax url
-
 
 # Imports
 import time, sys, re
 
-
-# Script
+# Base Script
 script = """
 addEventListener(
 
@@ -31,16 +29,13 @@ addEventListener(
 )
 """
 
-
 # Worker script
 def worker_script(doprax):
     if "https://" in doprax:
         doprax = doprax.split("/")[2]
-    temp = re.sub("target", doprax, script)
-    return temp
+    return re.sub("target", doprax, script)
 
-
-# Run the program
+# Main
 if __name__ == "__main__":
     if len(sys.argv) != 1:
         if sys.argv[1] in ["-h", "--help"]:
@@ -51,7 +46,7 @@ Help: python getScript.py [arguments]
     create Script -> python getScript.py [Doprax url without 'https://' and '/' at the end]
     example: 
         python getScript.py test.eu-gacagfhs.dopraxrocks.net
-"""
+                """.strip()
             )
         elif sys.argv[1]:
             for char in worker_script(sys.argv[1]):
@@ -61,6 +56,3 @@ Help: python getScript.py [arguments]
             print("Invalid argument! run with -h")
     else:
         print("No argument! run with -h")
-
-
-# EOF
