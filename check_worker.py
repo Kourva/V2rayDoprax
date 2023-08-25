@@ -17,7 +17,7 @@ def check_worker(worker: str) -> None:
             soup = bs4.BeautifulSoup(response.text, "html.parser")
             print(
                 f"\033[2;32m",
-                f"soup.find("p").text.replace('page', 'message')",
+                f"soup.find('p').text.replace('page', 'message')",
                 f"\nStatus code:     {response.status_code}\033[m",
             )
 
