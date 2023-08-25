@@ -71,13 +71,15 @@ Help: python check_worker [url]
 Where url looks like:
     https://example.workers.dev
 ```
-+ **getAllIPs.py**
++ ~~**getAllIPs.py**~~
 ```bash
 Help: python getAllIPs.py [arguments]
 
     for save the IPs -> python getAllIPs.py -s
     for help message -> python getAllIPs.py [-h, --help]
 ```
+> This file is no longer available and All Ip addresses are getting used offile from database.
+
 + **getIP.py**
 ```bash
 Help: python getIP.py [arguments]
