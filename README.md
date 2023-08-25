@@ -7,7 +7,7 @@
 
 # Note:
 + ~~IT SEEMS SOME WEBSITES WE USE IN THIS PROJECT ARE NO LONGER AVAILABLE! WAIT FOR UPDATE~~
-+ SCRIPTS ARE UPDATED AND WORK FINE
++ SCRIPTS ARE UPDATED AND WORK FINE 
 + Fixed Vmess decoding problem in ascii included remarks
 
 # Features
