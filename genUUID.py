@@ -1,35 +1,31 @@
 #!/usr/bin/env python3
+# -*- coding: utf-8 -*-
 
 # This Script Generates UUID version 1 or version 4
 
 # Imports
 import uuid, sys, time
 
-
 # Printer
-def printer(string):
+def printer(string: str) -> None:
     for char in string:
         sys.stdout.write(char)
         sys.stdout.flush()
         time.sleep(0.01)
     print()
 
-
 # UUID version 1 generator
 def generate_uuid_1():
     generated_uuid = uuid.uuid1()
     return f"Version1 UUID: \033[2;32m{str(generated_uuid).upper()}\033[m\n"
-
 
 # UUID version 4 generator
 def generate_uuid_4():
     generated_uuid = uuid.uuid4()
     return f"Version4 UUID: \033[2;32m{str(generated_uuid).upper()}\033[m\n"
 
-
 # Takes arguments
 arguments = sys.argv
-
 
 # Help message
 help_message = """
@@ -49,8 +45,7 @@ Help: python genUUID.py [[-h] [-v1] [-v4]]
     number generator.
 """
 
-
-# Run the program
+# Main
 if __name__ == "__main__":
     if "-h" in arguments:
         print(help_message)
@@ -66,5 +61,3 @@ if __name__ == "__main__":
 
     if len(sys.argv) == 1:
         print("\033[2;31mError: no argument found! Use -h\033[m")
-
-# EOF
