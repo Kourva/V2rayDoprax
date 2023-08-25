@@ -37,7 +37,7 @@ git clone https://github.com/Kourva/V2rayDoprax && cd V2rayDoprax
 ```bash
 pip install requests beautifulsoup4
 ```
-+ make scripts executale (if you want to open with `./`)
++ make scripts executable (if you want to open with `./`)
 ```bash
 chmod +x *.py
 ```
