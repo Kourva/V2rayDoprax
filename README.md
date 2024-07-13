@@ -32,7 +32,7 @@
 # Installation
 + clone
 ```bash
-git clone https://github.com/Kourva/V2rayDoprax && cd V2rayDoprax 
+git clone https://github.com/kozyol/V2rayDoprax && cd V2rayDoprax 
 ```
 + requirements
 ```bash
@@ -184,7 +184,7 @@ Help: python freeV2ray.py [arguments]
 ###### genUUID uses built-in module, so it's fast and offline
 
 # Needed tools
-###### 1:  You need to fork this [repository](https://github.com/Kourva/V2ray-for-Doprax)
+###### 1:  You need to fork this [repository](https://github.com/kozyol/V2ray-for-Doprax)
 ###### 2:  An E-mail Address for creating account
 ###### 3:  Account in [Doprax](https://www.doprax.com/)
 ###### 4:  Account in [CloudFlare](https://cloudflare.com)
@@ -208,7 +208,7 @@ Websites to get UUID:
 <br>
 
 ###### There is an android app to create vmess/vless proxy. check it out :] 
-###### V2Paste: https://github.com/Kourva/V2Paste
+###### V2Paste: https://github.com/kozyol/V2Paste
 ###### So I'm trying to work on both linux and android versions. Hope you enjoy
 
 <br>
